@@ -1,0 +1,8 @@
+# NAME: Velna
+# AUTHOR: Patato-H
+# REPO: https://github.com/Patato-H/rules
+# UPDATED: 2026-11-22 00:10:00
+# DOMAIN-SUFFIX: 2
+# TOTAL: 2
+DOMAIN-SUFFIX,myshopify.com
+DOMAIN-SUFFIX,gddns.org
