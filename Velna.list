@@ -1,11 +1,8 @@
-# Velna 自定义规则 · JH 个人补充清单
-# 用法（Surge）：
-#   [Ruleset Velna]
-#   RULE-SET,https://cdn.jsdelivr.net/gh/Patato-H/rules@main/Velna.list
-#   [Rule]
-#   RULE-SET,Velna,DIRECT
-# 本文件只写「匹配什么」，不写策略；策略由引用处决定。
-
-# ── 直连 ──
+# NAME: Velna
+# AUTHOR: Patato-H
+# REPO: https://github.com/Patato-H/rules
+# UPDATED: 2026-11-22 00:10:00
+# DOMAIN-SUFFIX: 2
+# TOTAL: 2
 DOMAIN-SUFFIX,myshopify.com
 DOMAIN-SUFFIX,gddns.org
