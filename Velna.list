@@ -1,0 +1,14 @@
+#!name=Velna 自定义规则
+#!desc=JH 个人直连/代理补充规则，按需增删
+#
+# Surge 用法：
+#   [Ruleset Velna]
+#   RULE-SET,https://cdn.jsdelivr.net/gh/Patato-H/rules@main/Velna.list
+#   [Rule]
+#   RULE-SET,Velna,DIRECT
+#
+# 注意：本文件只写「匹配什么」，不写策略；策略由引用处决定。
+
+# ── 直连 ──
+DOMAIN-SUFFIX,myshopify.com
+DOMAIN-SUFFIX,gddns.org
