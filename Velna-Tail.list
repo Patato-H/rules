@@ -1,0 +1,16 @@
+# NAME: Velna-Tail
+# AUTHOR: Patato-H
+# REPO: https://github.com/Patato-H/rules
+# UPDATED: 2026-11-23
+# 用法: RULE-SET,https://raw.githubusercontent.com/Patato-H/rules/main/Velna-Tail.list,TS,no-resolve
+# tailnet 网段 + 只在 tail 内可达的 velna 子域
+IP-CIDR,100.64.0.0/10
+IP-CIDR6,fd7a:115c:a1e0::/48
+DOMAIN,hermes.velna.cn
+DOMAIN,mem.velna.cn
+DOMAIN,mem0.velna.cn
+DOMAIN,ops.velna.cn
+DOMAIN,mcp.velna.cn
+DOMAIN,ui.velna.cn
+DOMAIN,lt.velna.cn
+DOMAIN,kit.velna.cn
