@@ -1,8 +1,20 @@
 # NAME: Velna
 # AUTHOR: Patato-H
 # REPO: https://github.com/Patato-H/rules
-# UPDATED: 2026-11-22 00:10:00
+# UPDATED: 2026-11-27 07:00:00
 # DOMAIN-SUFFIX: 2
-# TOTAL: 2
+# TAILSCALE: 6
+# TOTAL: 8
 DOMAIN-SUFFIX,myshopify.com
 DOMAIN-SUFFIX,gddns.org
+
+# ── Tailscale ──
+# 控制面必须直连，否则要用隧道才能连隧道
+DOMAIN,tail.velna.cn,DIRECT
+DOMAIN-SUFFIX,ts.net,Loon
+# tailnet 网段走 Loon 的 tail 节点（velna 各子域都解析到 100.64.0.4，靠这条进隧道）
+IP-CIDR,100.64.0.0/10,Loon
+IP-CIDR6,fd7a:115c:a1e0::/48,Loon
+# 打洞包绕过机场直连
+AND,((PROTOCOL,UDP),(DEST-PORT,41641)),DIRECT
+AND,((PROTOCOL,UDP),(DEST-PORT,3478)),DIRECT
